@@ -30,6 +30,19 @@
     <meta name="twitter:title" content="Tarasso Coffee - Kopi Asli Nusantara">
     <meta name="twitter:description" content="Nikmati rasa kopi terbaik dari Tarasso Coffee, kedai kopi lokal asli Bogor. Kami menyajikan kopi botolan, drip coffee, dan espresso pouch berkualitas." />
     <meta name="twitter:image" content="https://tarassocoffee.pages.dev/img/tarasso.webp">
+
+    <!-- Redirect khusus kalau dibuka dari GitHub Pages -->
+    <script>
+      (function () {
+        // Cek domain sekarang
+        if (window.location.hostname === "tarassocoffee-id.github.io") {
+          var base = "https://tarassocoffee.pages.dev";
+          // Pertahankan path, query, dan hash (kalau ada)
+          var target = base + window.location.pathname + window.location.search + window.location.hash;
+          window.location.replace(target);
+        }
+      })();
+    </script>
     
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
