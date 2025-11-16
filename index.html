@@ -10,14 +10,12 @@
     <!-- Optional: jangan diindex lagi, biar fokus ke domain baru -->
     <meta name="robots" content="noindex">
     <script>
-        // Redirect cepat via JavaScript
         (function() {
-        var target = "https://tarassocoffee.pages.dev/";
-        // Kalau mau ikutkan query string & hash:
-        target += window.location.search + window.location.hash;
+        var base = "https://tarassocoffee.pages.dev";
+        var target = base + window.location.pathname + window.location.search + window.location.hash;
         window.location.replace(target);
         })();
-      </script>
+    </script>
  
     <link rel="icon" type="image/x-icon" href="/img/tarasso2.ico" />
     <!-- SEO Meta Tags -->
